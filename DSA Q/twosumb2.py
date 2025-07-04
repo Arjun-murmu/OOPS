@@ -1,0 +1,18 @@
+# LeetCode 1 - Two Sum
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        # Brute force approach
+        # Time complexity: O(n^2)
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+
+nums = [2,7,11,15]
+target = 9
+print(Solution().twoSum(nums,target))  # Output: [0, 1]

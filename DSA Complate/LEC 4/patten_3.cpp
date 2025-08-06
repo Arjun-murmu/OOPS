@@ -132,11 +132,33 @@ E E E E E*/
 
     // }    
 
+    /*
+    A
+    B A
+    C B A
+    D C B A
+    */
+//    for(int i = 0;i<5;i++){
+//         for(int j = i; j >= 0 ;j--){
+//             cout<<char('A' + j)<<" ";
+//         }
+//         cout<<"\n";
+//     }
+
+
+/*
+A 
+C C
+F F F
+J J J J
+O O O O O
+U U U U U U
+*/
       int n = 5;
       char ch = 'A';
     for(int i = 0;i<=n;i++){
-        for(int j = i; j > 0 ;j--){
-            cout<<ch<<" ";
+        for(int j = i; j >= 0 ;j--){
+            cout<<char(ch + j)<<" ";
             ch++;
         }
         cout<<"\n";

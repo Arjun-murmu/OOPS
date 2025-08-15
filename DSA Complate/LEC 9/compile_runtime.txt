@@ -1,0 +1,26 @@
+Compile-time and run-time represent two distinct phases in the software development process, each with different activities and potential issues. 
+Compile-time: 
+
+• Definition: This is the phase where the source code written by a programmer is translated into an executable form (machine code or bytecode) by a compiler. 
+• Activities: During compilation, the compiler performs tasks such as: 
+	• Syntax checking: Ensuring the code adheres to the language's grammatical rules. 
+	• Type checking: Verifying that data types are used consistently and correctly. 
+	• Semantic analysis: Checking for logical errors that can be detected before execution. 
+
+• Errors: Compile-time errors (e.g., syntax errors like a missing semicolon, undeclared variables) prevent the program from being successfully compiled and thus, from running. [1, 2]  
+
+Run-time: 
+
+• Definition: This is the phase where the compiled program is actually executed by the computer's processor. 
+• Activities: During run-time, the program performs its intended operations, interacts with the operating system and hardware, and processes data. 
+• Errors: Run-time errors (e.g., division by zero, accessing an array out of bounds, memory allocation issues) occur during program execution and can lead to program crashes or unexpected behavior. These errors are not caught by the compiler and only manifest when the program is running. 
+
+Key Differences Summarized: 
+
+• Focus: Compile-time focuses on transforming source code into an executable, while run-time focuses on the actual execution of that executable. 
+• Timing: Compile-time occurs before the program runs, while run-time occurs when the program is being executed. 
+• Error Detection: Compile-time errors are detected by the compiler before execution, preventing the program from running. Run-time errors occur during execution and are not caught by the compiler. 
+
+AI responses may include mistakes.
+
+[1] https://medium.com/@YodgorbekKomilo/understanding-compile-time-and-runtime-in-programming-a001a40f1c27[2] https://www.techtarget.com/searchsoftwarequality/definition/runtime

@@ -25,7 +25,7 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-
+```
 # Contributing 
 This repository is meant only as a learning resource. I am not accepting pull requests or external contributions, since the code is kept as-is for learners to follow along with the tutorials.
 

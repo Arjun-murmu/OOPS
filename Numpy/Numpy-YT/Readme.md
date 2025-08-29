@@ -25,7 +25,7 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-
+```
 # Contributing 
 This repository is meant only as a learning resource. I am not accepting pull requests or external contributions, since the code is kept as-is for learners to follow along with the tutorials.
 
@@ -33,4 +33,10 @@ This repository is meant only as a learning resource. I am not accepting pull re
 This code is learned from a YouTube channel, so most of the code is similar to the examples shown in the video.  
 YouTube channel name: **Chai Aur Code**  
 Course: **Complete Numpy Course in Hindi | Chai aur Numpy** – [Watch here](https://youtu.be/x7ULDYs4X84?si=3JYMGACbU6DB3SKR).
+<<<<<<< HEAD
+=======
+
+
+ 
+>>>>>>> 8a18f910439f6b7a6e6ba47dc16fd501a1b66b03
 

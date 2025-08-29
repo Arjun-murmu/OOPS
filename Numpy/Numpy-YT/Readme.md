@@ -30,6 +30,7 @@ pip install -r requirements.txt
 This repository is meant only as a learning resource. I am not accepting pull requests or external contributions, since the code is kept as-is for learners to follow along with the tutorials.
 
 
-👉 Do you also want me to add a **YouTube badge/button** like this:  
+This code is learned from a YouTube channel, so most of the code is similar to the examples shown in the video.  
+YouTube channel name: **Chai Aur Code**  
+Course: **Complete Numpy Course in Hindi | Chai aur Numpy** – [Watch here](https://youtu.be/x7ULDYs4X84?si=3JYMGACbU6DB3SKR).
 
-[![YouTube](https://img.shields.io/badge/Watch%20on-YouTube-red?logo=youtube)](https://youtu.be/x7ULDYs4X84?si=o6LUWAEy0Zr00Wtx)  

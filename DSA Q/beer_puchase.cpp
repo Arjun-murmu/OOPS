@@ -34,8 +34,10 @@ Testcase Output
 using namespace std;
 
 long long max_bottle_cost(int n, long long x, vector<int>& costs) {
+    // 1. Sort the initial costs (cheapest shops first)
     sort(costs.begin(), costs.end());
 
+    // 2. Build prefix sum array
     vector<long long> prefix(n + 1, 0);
     for (int i = 0; i < n; i++) {
         prefix[i + 1] = prefix[i] + costs[i];
@@ -44,11 +46,12 @@ long long max_bottle_cost(int n, long long x, vector<int>& costs) {
     long long ans = 0;
     long long usedDays = 0;
 
-    for (int k = 1; k <= n; k++) {
+    // 3. Iterate from largest prefix down to smallest
+    for (int k = n; k >= 1; k--) {
         long long base = prefix[k];
-        if (base > x) break;
+        if (base > x) continue;  // can't even afford day 1 with k shops
 
-        long long maxDays = (x - base) / k + 1;
+        long long maxDays = (x - base) / k + 1;  // total days possible
 
         if (maxDays > usedDays) {
             ans += (maxDays - usedDays) * k;

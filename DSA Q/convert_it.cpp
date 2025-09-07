@@ -1,3 +1,29 @@
+/*
+Problem Statement
+Given an array of integer, an astrologer has determined that it is not lucky and needs to be changed.
+
+The suggested modification involves increasing the value at each index by the maximum value encountered up to that index. Your task is to print the modified array.
+
+Input Format
+The first line contains a single integer N, representing the size of the array.
+
+The second line contains N space-separated integers, representing the elements of the array.
+
+Output Format
+Print the modified array after applying the suggested changes.
+
+Constraints
+1 <= N <= 100
+
+0 <= A[i] <= 10^4
+
+Sample Testcase 0
+Testcase Input
+1
+12
+Testcase Output
+24*/
+
 #include <iostream>
 #include <vector>
 using namespace std;

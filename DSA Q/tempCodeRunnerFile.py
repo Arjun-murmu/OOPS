@@ -1,5 +1,1 @@
-print(f"Checking indices {start} and {end}: {arr[start][0]} + {arr[end][0]} = {sum_val}")
-            print(f"Checking indices {start} and {end}: {arr[start][1]} + {arr[end][1]} = {sum_val}")
-            print(f"Checking indices {start} and {end}: {arr[start]} + {arr[end]} = {sum_val}")
-            print(f"Checking indices {start} and {end}: {arr[start][0]} + {arr[end][0]} = {sum_val}")
-            print(f"Checking indices {start} and {end}: {arr[start][1 ]} + {arr[end][1]} = {sum_val}")
+#

@@ -1,4 +1,6 @@
 #include<iostream>
+#include<string>
+#include <algorithm> 
 using namespace std;
 
 int palidromInt(unsigned long long n){
@@ -21,16 +23,11 @@ int palidromInt(unsigned long long n){
 }
 
 int main(){
-    // unsigned long long n;
-    // cin>>n;
+    unsigned long long n;
+    cin>>n;
     //input 1234567890987654321
-    // cout<<"n = "<<n<<endl;
-    // palidromInt(n);
-
-    string n;
-    
-
-    
+    cout<<"n = "<<n<<endl;
+    palidromInt(n);
     return 0;
 
 }

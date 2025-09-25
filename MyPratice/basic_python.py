@@ -180,6 +180,95 @@ std_list = [ {
 # print("Second student state : {}".format(std_list[1]["address"]["state"]))
 # print("Type of second student is : {} ".format(type(std_list[1])))
 
-#set
+#set 
+# (sets are unordered and unindexed collection of items. No duplicate members.)
+
 colors = {"Red", "Green", "Blue", "Yellow", "Orange"}
-print(type(colors))
+# print(type(colors))
+type_colors = type(colors)
+# print("Type of colors is : {} ".format(type_colors))
+# print("Original colors set : {}".format(colors))
+# print(f"Original colors : {colors} ")
+# print("Length of colors set is : {} ".format(len(colors)))
+# print("Adding 'Purple' to colors set.")
+colors.add("Purple")
+# print("After adding new color : {}".format(colors))
+colors.add("Red")
+# print("After adding existing color : {}".format(colors))
+colors.add("Green")
+colors.add("Pink")
+colors.add("Red")
+# print("After adding some existing and new colors : {}".format(colors))
+# print("Length of colors set is : {} ".format(len(colors)))
+colors.add("Blue")
+# print("After adding existing color : {}".format(colors))
+# print("Length of colors set is : {} ".format(len(colors)))
+
+colors.remove("Yellow")
+# print("After removing 'Yellow' from colors set : {}".format(colors))
+# print("Length of colors set is : {} ".format(len(colors)))
+colors.remove("Orange") #will give error KeyError as 'Orange' is not in the set
+# print("After removing 'Orange' from colors set : {}".format(colors))
+# print("Length of colors set is : {} ".format(len(colors)))
+
+colors.discard("Pink")
+# print("After discarding 'Pink' from colors set : {}".format(colors))
+# print("Length of colors set is : {} ".format(len(colors)))
+
+# print("Union of two sets : {}".format(colors.union({"Cyan", "Magenta", "Yellow", "Black"})))
+# print("Intersection of two sets : {}".format(colors.intersection({"Red", "Magenta", "Yellow", "Black"})))
+# print("Difference of two sets : {}".format(colors.difference({"Red", "Magenta", "Yellow", "Black"})))
+# print("Symmetric Difference of two sets : {}".format(colors.symmetric_difference({"Red", "Magenta", "Yellow", "Black"})))
+
+# print("Clearing colors set.")
+# colors.clear()
+# print("After clearing colors set : {}".format(colors))
+
+#Type Conversion
+# l = "100"
+# m = int(l)   # convert string → int
+# n = float(m) # convert int → float
+# print("Original string : {}, Type : {} , Converted to int : {} \n, Type : {} , Converted to float : {}, Type : {}".format(l, type(l), m, type(m), n, type(n)))
+
+
+# Constant 
+empty_value = None
+# print(empty_value, type(empty_value))
+
+#Complex Number
+c1 = 2 + 3j
+c2 = complex(5, 7)
+# print("Complex number c1 : {}, Type : {}".format(c1, type(c1)))
+# print("Complex number c2 : {}, Type : {}".format(c2, type(c2)))
+# print("Real part of c1 : {}, Imaginary part of c1 : {}".format(c1.real, c1.imag))
+# print("Real part of c2 : {}, Imaginary part of c2 : {}".format(c2.real, c2.imag))
+
+# Range
+r = range(1, 6)
+# print(list(r)) # convert range to list and print
+# print("Range r : {}, Type : {}".format(r, type(r)))
+
+# Bytes and Bytearray
+b = bytes("Python", "utf-8")
+print(b)
+
+ba = bytearray("Python", "utf-8")
+ba[0] = 80  # editable
+print(ba)
+print(ba.decode("utf-8"))
+
+print("Byte b : {}, Type : {}".format(b, type(b)))
+print("Bytearray ba : {}, Type : {}".format(ba, type(ba)))
+
+# Date and Time
+from datetime import date, datetime
+print("Date and Time : ", datetime.now())
+print("Date and Time : {}".format(datetime.now()))
+
+print("Today's date : ", date.today())
+print("Now time : ",datetime.now().time())
+
+""""Today's date :  2025-09-26
+Now time :  01:41:32.513580"""
+
+print("Python Basics Completed")

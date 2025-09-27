@@ -54,7 +54,49 @@ class Student_Result:
             avg = sum / len(self.marks)
         print(f"Average marks of {self.name} is : {avg}")
     
+    @staticmethod   #decorator
+    def hello():
+        print("Hello Student.")
+
 std_r1 = Student_Result("Sumita Soren", [85, 90, 78, 92])
-std_r1.average()
+# std_r1.average()
 std_r2 = Student_Result("Nabin Soren", [75, 80, 68, 82])
-std_r2.average()
+# std_r2.average()
+# Student_Result.hello()
+# std_r1.hello()
+
+class Car:
+    def __init__(self):
+        self.acc = False
+        self.clush = False
+        self.brk = False
+    def start(self):
+        self.acc = True
+        self.clush = True
+        print("Car started.")
+
+car1 = Car()
+# car1.start()
+
+
+class Account:
+    def __init__(self, balance, acc_no):
+        self.balance = balance
+        self.acc_no = acc_no
+
+    def debit(self, amount):
+        self.balance -= amount
+        print("Rs : ", amount, "debited from your account.")
+        print("Total balance is : ", self.printing())
+
+    def credit(self, amount):
+        self.balance += amount
+        print("Rs : ", amount, "credited to your account.")
+        print("Total balance is : ", self.printing())
+
+    def printing(self):
+        return self.balance
+
+acc1 = Account(6000, 1234)
+acc1.debit(100)
+acc1.credit(1000)

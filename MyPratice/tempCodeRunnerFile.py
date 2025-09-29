@@ -1,4 +1,3 @@
-def total_sum(*numbers):
-#     return sum(numbers)
-
-# total_sum("Sum of many : ", total_sum(1,2,3,4))
+print("Left Rotation (by 1): ")
+# ar = ar[1:] + ar[:1]
+# print(ar)

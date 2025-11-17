@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arjun Murmu</title>
+  <link rel="stylesheet" href="{% static 'about.css'%}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section -->
+    <div class="left">
+      <h1>Arjun<br>Murmu</h1>
+      <h2>Programmer</h2>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <p class="bio">
+        I love fashion. I love the thrill of wearing<br>
+        a new piece and giving it a story. This<br>
+        passion has taken me to many different<br>
+        places and has given me opportunities<br>
+        to work with many talented people in<br>
+        the industry. Enter my world.
+      </p>
+    </div>
+
+    <!-- Right Section -->
+    <div class="right">
+      <img src="{% static 'arjunimage.jpg' %}" alt="Arjun Murmu">
+      <ul class="menu">
+        <li><a href="#">Collabs</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact Me</a></li>
+        <li><a href="#">Merch</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

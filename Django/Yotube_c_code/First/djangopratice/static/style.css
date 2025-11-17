@@ -1,0 +1,13 @@
+body {
+    background-color : #08153d;
+}
+h1{
+    text-align:center;
+    font-size:3em;
+    color:aliceblue;  
+}
+p{
+    text-align:center;
+    color:azure;
+    font-size:2em;
+}

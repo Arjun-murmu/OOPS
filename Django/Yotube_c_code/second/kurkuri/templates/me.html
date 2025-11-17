@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihaan Kumar - Fashion Profile</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Playfair Display (Serif) and Inter (Sans-serif) fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Load Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Custom font family definitions */
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* The profile image is set as a large background with heavy filtering */
+        .profile-bg {
+            /* Using a high-quality royalty-free fashion portrait for visual similarity */
+            background-image: url('{% static 'images/myphoto.jpg' %}');
+            background-size: cover;
+            background-position: center 30%; /* Adjust position to focus on the face */
+            filter: grayscale(100%) brightness(120%) contrast(110%);
+        }
+        
+        /* Custom dark overlay tint (similar to the image's purple hue) */
+        .overlay-tint {
+            background-color: #4A148C; /* Deep Purple */
+            opacity: 0.1;
+            mix-blend-multiply: normal;
+        }
+        
+        /* Navigation line transition effect */
+        .nav-link-line {
+            transition: width 300ms ease;
+        }
+        .nav-link:hover .nav-link-line {
+            width: 5rem; /* Increase width on hover */
+        }
+    </style>
+</head>
+<body class="font-inter bg-black">
+
+    <div class="relative min-h-screen w-full text-white overflow-hidden">
+        
+        <!-- 1. Full-Screen Profile Image Background with Filters and Overlays -->
+        <div class="profile-bg absolute inset-0">
+            <!-- Dark overall opacity -->
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <!-- Subtle color tint overlay -->
+            <div class="absolute inset-0 overlay-tint"></div>
+        </div>
+
+        <!-- 2. Main Content Container (relative z-index to sit on top of the background) -->
+        <div class="relative z-10 flex flex-col lg:flex-row h-full min-h-screen p-8 md:p-16">
+            
+            <!-- LEFT SECTION: Profile Info (Name, Social, Bio) -->
+            <div class="w-full lg:w-3/5 flex flex-col justify-between pt-10 pb-20 lg:py-0">
+                <div class="space-y-16">
+                    <!-- Name -->
+                    <h1 class="font-playfair text-6xl md:text-8xl font-normal tracking-tight leading-none">
+                        Arjun<br>Murmu
+                    </h1>
+                    
+                    <!-- Social Icons -->
+                    <div class="flex space-x-8 text-2xl">
+                        <a href="#" class="hover:text-gray-300 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-300 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="hover:text-gray-300 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Description/Bio -->
+                <p class="max-w-md text-base leading-relaxed font-light mt-16 lg:mt-0">
+                    I love fashion. I love the thrill of wearing a new piece and giving it a story. This passion has taken me to many different places and has given me opportunities to work with many talented people in the industry. Enter my world.
+                </p>
+            </div>
+
+            <!-- RIGHT SECTION: Vertical Navigation (Positioned over the image area) -->
+            <div class="w-full lg:w-2/5 flex items-center justify-start lg:justify-end mt-20 lg:mt-0">
+                <nav class="space-y-2 w-full max-w-xs text-right">
+                    <!-- Navigation Items -->
+                    <!-- The line appears to cut into the image, so the navigation is deliberately placed to the right. -->
+                    
+                    <a href="#" class="nav-link block py-2 md:py-3 text-white transition duration-300 hover:opacity-80">
+                        <div class="flex items-center justify-end text-xl md:text-2xl font-light tracking-wide">
+                            <span class="mr-6">Collabs</span>
+                            <div class="nav-link-line w-12 h-px bg-white"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="nav-link block py-2 md:py-3 text-white transition duration-300 hover:opacity-80">
+                        <div class="flex items-center justify-end text-xl md:text-2xl font-light tracking-wide">
+                            <span class="mr-6">Portfolio</span>
+                            <div class="nav-link-line w-12 h-px bg-white"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="nav-link block py-2 md:py-3 text-white transition duration-300 hover:opacity-80">
+                        <div class="flex items-center justify-end text-xl md:text-2xl font-light tracking-wide">
+                            <span class="mr-6">Blog</span>
+                            <div class="nav-link-line w-12 h-px bg-white"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="nav-link block py-2 md:py-3 text-white transition duration-300 hover:opacity-80">
+                        <div class="flex items-center justify-end text-xl md:text-2xl font-light tracking-wide">
+                            <span class="mr-6">Reviews</span>
+                            <div class="nav-link-line w-12 h-px bg-white"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="nav-link block py-2 md:py-3 text-white transition duration-300 hover:opacity-80">
+                        <div class="flex items-center justify-end text-xl md:text-2xl font-light tracking-wide">
+                            <span class="mr-6">Contact Me</span>
+                            <div class="nav-link-line w-12 h-px bg-white"></div>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="nav-link block py-2 md:py-3 text-white transition duration-300 hover:opacity-80">
+                        <div class="flex items-center justify-end text-xl md:text-2xl font-light tracking-wide">
+                            <span class="mr-6">Merch</span>
+                            <div class="nav-link-line w-12 h-px bg-white"></div>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

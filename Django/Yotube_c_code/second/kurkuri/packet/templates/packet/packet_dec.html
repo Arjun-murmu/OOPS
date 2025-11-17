@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+description page
+{% endblock %}
+
+{% block content %}
+<h1 class="bg-pink-400 text-3xl font-bold text-center"><u>About this Picture</u></h1>
+<p class="text-2xl">{{packet.description}}</p>
+<img class="mask-radial-from-70% md:mask-radial-from-50%" src="{{packet.image.url}}" alt="">
+{% endblock %}
+

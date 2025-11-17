@@ -1,0 +1,36 @@
+{% comment %} <a href="{% url 'home' %}">Home</a> |
+<a href="{% url 'about' %}">About</a> |
+<a href="{% url 'details' %}">Details</a> |
+<a href="{% url 'student_list' %}">Students</a> {% endcomment %}
+
+{% include "base.html" %}
+{% block content %}
+<div class="container mt-5 text-center">
+    <h2>About Page</h2>
+    <p>This is created by {{ author }}</p>
+    <a href="/">Back to Home</a><br>
+    <a href="/details/">Go to Details Page</a>
+</div>
+{% endblock %}
+ <div class="container mt-5 text-center">
+        <h1 class="text-primary">Welcome to Django Static Files Setup!</h1>
+        <p>This is styled using Bootstrap and custom CSS.</p>
+        <button class="btn btn-success" id="colorChangeBtn">Click Me</button>
+    </div>
+   <script>
+    // Function to generate a random color
+    function getRandomColor() {
+        const randomHex = Math.floor(Math.random() * 16777215).toString(16);
+        return '#' + randomHex.padStart(6, '0');
+    }
+
+    // Wait until the HTML content is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        const button = document.getElementById('colorChangeBtn');
+        button.addEventListener('click', function() {
+        const newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+        console.log("Changed to color:", newColor);
+        });
+    });
+</script>

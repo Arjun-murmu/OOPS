@@ -1,0 +1,8 @@
+{% include "base.html" %}
+<h2>All Students</h2>
+
+<ul>
+    {% for student in students %}
+        <li>{{ student.roll_no}} : {{ student.name }} , {{student.branch}} </li>
+    {% endfor %}
+</ul>

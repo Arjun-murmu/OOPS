@@ -1,7 +1,8 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-
+//Time Complexity (Worst Case)= O(n²)
+//Space = O(1)
 class Solution{
     void swap(int &a, int &b){
         int temp = a;
@@ -12,18 +13,23 @@ class Solution{
     vector<int> bubbleSort(vector<int>& arr){
         int n = arr.size();
         bool swapped;
+        int count = 0;
         for(int i = 0; i < n; i++){
             swapped = false;
-            for(int j = 0; j < n-i-1; j++){
+            for(int j = 0; j < n; j++){
                 if(arr[j] > arr[j+1]){
                     swap(arr[j], arr[j+1]);
                     swapped = true;
+                    if(swapped){
+                        count++;
+                    }
                 }
             }
             if(!swapped){
                 break;
             }
         }
+        cout<<"Swaperd time : "<<count<<endl;
         return arr;
     }
 };

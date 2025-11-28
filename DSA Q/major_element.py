@@ -16,7 +16,7 @@ class Solution(object):
                 count -= 1
         return candidate
 # Example usage
-nums = [3, 2, 3]
+nums = [3, 2, 3,2]
 k = Solution().majorityElement(nums)  # Output: 3
 print("Majority element:", k)  # The majority element is 3
 # The time complexity is O(n) where n is the length of the input array.

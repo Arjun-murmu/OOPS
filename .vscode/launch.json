@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "JAVA.hello",
+            "projectName": "PREPARATION_9f0f98b"
+        },
+        {
             "name": "C/C++: gcc.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",

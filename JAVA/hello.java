@@ -14,6 +14,10 @@ class hello
         System.out.println("Sum of two number : " + sum);
 
         //Data Types
+        short sh = 558;
+        long l = 5673l;
+        System.out.println(sh);
+        System.out.println(l);
         float cgpa = 6.94f;
         System.out.println(cgpa);
 

@@ -18,6 +18,8 @@ class Student_details{
         System.out.println("Age : " + age);
         System.out.println("Cgpa : " + cgpa);
 
+        sc.close();
+
     }
 
 }
@@ -46,5 +48,7 @@ public class Input_Example {
         //Student details print
         Student_details obj = new Student_details();
         obj.student();
+
+        scan.close();
     }
 }

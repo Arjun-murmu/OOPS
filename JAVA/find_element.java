@@ -37,5 +37,7 @@ public class find_element {
             System.out.print(n + " ");
         }
 
+        sc.close();
+
     }
 }

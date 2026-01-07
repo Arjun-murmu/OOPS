@@ -31,5 +31,6 @@ public class QSoluation {
         for(int i = 2; i < n; i++){
             obj.prime_number(i);
         }
+        sc.close();
         }
     }

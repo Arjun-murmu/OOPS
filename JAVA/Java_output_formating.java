@@ -13,6 +13,7 @@ public class Java_output_formating {
             }
             System.out.println("================================");
 
+            sc.close();
     }
 }
 

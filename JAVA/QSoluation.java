@@ -15,10 +15,10 @@ class Soluation{
             }
         }
         if(isPrime){
-            System.out.println("Prime");
+            System.out.println("Prime : " + n);
         }
         else{
-            System.out.println("Not Prime");
+            System.out.println("Not Prime : " + n);
         }
        
     }
@@ -28,6 +28,8 @@ public class QSoluation {
         Scanner sc = new Scanner(System.in);
         Soluation obj = new Soluation();
         int n = sc.nextInt();
-        obj.prime_number(n);
+        for(int i = 2; i < n; i++){
+            obj.prime_number(i);
+        }
+        }
     }
-}
